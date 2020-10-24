@@ -38,12 +38,22 @@ ul li a{
     color: darkgray;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 500;
 }
-
+ul li a:hover {
+    color : black;
+    font-weight: 600;
+}
 .header-btn {
     line-height: 100px;
     width: 120px;
     border : 2px solid black;
+}
+.header-btn:hover {
+    background-color: black;
+}
+.header-btn:hover > a {
+    color : white;
 }
 .header-btn a {
     color: black;
@@ -146,10 +156,15 @@ Content Css
     text-decoration: none;
     padding : 9px 25px;
     color : white;
+    font-weight: 700;
     text-transform: uppercase;
     border: 1px solid white;
 }
 
+.content .content-text .content-btn:hover {
+    background-color: white;
+    color : hsl(256, 26%, 20%);
+}
 /* Content part 2*/
 .second-content {
     margin-top: 100px;
@@ -166,7 +181,7 @@ Content Css
 
 .second-content .introduce{
     display: flex;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .second-content .col-4{
     font-family: 'DM Serif Display', serif;
@@ -186,7 +201,7 @@ Content Css
 
 
 
-/**/
+/*banner*/
 .second-content .banner {
     height: 270px;
     display: flex;
@@ -208,9 +223,14 @@ Content Css
     width: 50%;
     font-size: 3.5rem;
     color : white;
+    word-wrap: break-word;
 }
 
-.second-content .banner a{
+.second-content .banner a:hover{
+    background-color: white;
+    color : hsl(256, 26%, 20%);
+}
+    .second-content .banner a{
     z-index: 1;
     width: 12%;
     height: 16%;
@@ -219,8 +239,82 @@ Content Css
     align-items: center;
     justify-content: center;
     margin-left: 10%;
-    background-color: white;
+    color : white;
+    background-color: transparent;
+    border: 1px solid white;
     text-decoration: none;
     text-align: center;
     font-weight: 700;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgb(245, 244, 244);
+    position: relative;
+}
+footer .footer-img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 30%;
+    height: 60%;
+    z-index: 0;
+}
+footer .up {
+    z-index: 10000;
+    width: 70%;
+    height: 100px;
+    margin: 0px auto 0px auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgb(199, 199, 199);
+}
+footer .up .logo{
+    width: 100px;
+    height: 20px;
+    z-index: 2;
+}
+
+footer .up .social-media img{
+    margin-left : 10px;
+    color : white;
+}
+
+footer .down {
+    width: 70%;
+    z-index: 10;
+    margin : 60px auto 0px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .down .col-3{
+    width: 25%;
+}
+
+footer .down .col-3 a:hover {
+    border-bottom: 2px solid black;
+    width: fit-content;
+}
+footer .down .col-3 a {
+    border-bottom: transparent solid 2px;
+    font-family: 'Karla', sans-serif;
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+footer .down .col-3 .title {
+    z-index: 100;
+    color : rgb(114, 114, 114);
+    margin-bottom : 25px;
 }
