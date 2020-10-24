@@ -9,7 +9,7 @@ body {
 }
 
 header{
-    width: 80%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     height: 90px;
@@ -40,13 +40,112 @@ ul li a{
     text-transform: uppercase;
 }
 
-ul .header-btn {
+.header-btn {
     line-height: 100px;
     width: 120px;
     border : 2px solid black;
 }
-ul .header-btn a {
+.header-btn a {
     color: black;
 }
 
 
+/* 
+Content Css
+*/
+/*
+    part 1
+*/
+.content {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.content::after{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -2;
+    content: "";
+    height: 550px;
+    width: 100%;
+    background-color: hsl(256, 26%, 20%);
+}
+.content .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+.center .content-text {
+    width: 60%;
+    vertical-align: middle;
+    float: left;
+    position: relative;
+}
+.center .content-text:before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    border-top: 1px solid white;
+    top: -20%;
+    left : 0%;
+    z-index: -1;
+}
+.center .content-text h1 , 
+.center .content-text p {
+    font-family: 'Karla', sans-serif;
+    color : rgb(243, 243, 243);
+}
+
+.center .content-text h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    line-height: 90%;
+}
+
+.center .content-text p{
+    font-size : 0.9em;
+    margin-top : 30px;
+    font-weight: 10;
+    line-height: 180%;
+    margin-bottom: 40px;
+}
+.center .content-img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 25%;
+    float: left;
+}
+.center .content-img img {
+    width: 95%;
+    z-index: 1;
+    position: relative;
+}
+.content #left{
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+}
+.content #right{
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: 0%;
+}
+.content .content-text .content-btn {
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    padding : 9px 25px;
+    color : white;
+    text-transform: uppercase;
+    border: 1px solid white;
+}
+
+//
